@@ -1,8 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src = "scripts/script.js" type = "text/javascript"/></script>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- <script src="scripts/script.js" type="text/javascript" defer /></script> -->
+    <script src="scripts/app.js" type="text/javascript" defer /></script>
+    <title>Bear-Hunter-Ninja</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Julee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body></body>
+<body>
+    <img class="background" src="images/boris-yue-9sE-72cYCeI-unsplash.jpg" alt="Aleq">
+    <!-- <img class="background" src="images/pexels-dawn-lio-2177814.jpg" alt="Aleq"> -->
+    <div id='container'>
+        <div class='header'>
+            <div style='width:100%'>
+                BEAR - HUNTER - NINJA<sup style='width:40px'><a href="https://www.youtube.com/watch?v=AhFbbq0zpHY">*</a></sup>
+            </div>
+        </div>
+        <div id='player-choices' class='choices'>
+            <div class='label'>PLAYER</div>
+            <button id='bear-button' class='player-buttons'>
+                <img src='images/bear-head.png' width='80' id='player-bear-icon' />
+            </button>
+            <button id='hunter-button' class='player-buttons'>
+                <img src='images/hunter.png' width='80' id='player-hunter-icon' />
+            </button>
+            <button id='ninja-button' class='player-buttons'>
+                <img src='images/ninja-face.png' width='80' />
+            </button>
+
+        </div>
+
+        <div id='player-selection'>
+            <div class='selection-window' id='player-selection-window'>
+                <!-- <img src='images/nothing.png' width='150' /> -->
+                <img src='' width='150' />
+            </div>
+        </div>
+        <div id='versus'>
+            <span id='round-info'></span>
+            <span id='round-result'></span>
+            <img src="images/img_418591.png" width='150' />
+            <div id='win-column'>
+                <div id='results-container'>RESULTS</div>
+                <div id='results'></div>
+            </div>
+        </div>
+        <div id='ai-selection'>
+            <div class='selection-window' id='ai-selection-window'>
+                <!-- <img src='images/nothing.png' width='150' /> -->
+                <img src='' width='150' />
+            </div>
+        </div>
+        <div id='ai-choices' class='choices'>
+            <span class='label'>A.I.</span>
+            <button id='bear-button' class='ai-buttons'>
+                <img src='images/bear-head.png' width='80' />
+            </button>
+            <button id='hunter-button' class='ai-buttons'>
+                <img src='images/hunter.png' width='80' />
+            </button>
+            <button id='ninja-button' class='ai-buttons'>
+                <img src='images/ninja-face.png' width='80' />
+            </button>
+        </div>
+        <div id='footer'>
+            <div id='reset-container'>
+                <button id='reset-button'>RESET</button>
+            </div>
+            <footer>
+                An implementation by Lijo T. George <a href="https://www.github.com/lijotgeorge" target="_blank"><img src='images/GitHub-Mark-120px-plus.png' width='20'/></a>
+                <div style='font-size:13px'>
+                    This work made use of images and icons from 
+                    <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>,
+                    <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>, and 
+                    <a href='https://unsplash.com/photos/9sE-72cYCeI'>Boris YUE</a> from UNSPLASH.
+                </div> 
+                
+            </footer>
+        </div>
+    </div>
+</body>
 </html>
