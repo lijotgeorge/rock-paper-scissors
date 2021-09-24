@@ -88,13 +88,7 @@ playerChoice.forEach( button => {
 			});
 
 			centralColumn = document.getElementById('versus');
-			centralColumn.style.border = '3px solid black';
-			centralColumn.style.borderRadius = '20px';
-			centralColumn.style.backgroundColor = '#c0d6df';
-			centralColumn.style.fontFamily = '"Kaushan Script", cursive';
-			centralColumn.style.fontWeight = 'bold';
-			centralColumn.style.fontSize = '25px';
-			// centralColumn.style.textTransform = 
+			centralColumn.style.cssText = "border: 3px solid black; border-radius: 20px; background-color: #c0d6df; font-family: 'Kaushan Script', cursive; font-weight: bold; font-size: 25px;"
 
 			if (playerScore === 5) {
 				centralColumn.innerText = 'CONGRATULATIONS!\nYOU HAVE DEFEATED THE COMPUTER!\n\nReset to beat it again and feel superior.';
@@ -106,6 +100,7 @@ playerChoice.forEach( button => {
 	}
 })
 
+// Defining the reset button to reload page on click
 resetButton = document.getElementById('reset-button');
 
 resetButton.addEventListener('click', reload);
